@@ -1,6 +1,6 @@
 img = ''
 let objDetector
-let status1
+let status1 = ''
 let objects = []
 function preload(){
 }
@@ -47,8 +47,8 @@ function draw(){
     rect(300,90,270,320)*/
 }
 function modelLoaded(){
-    status1 = true
-    objDetector.detect(video,gotResults)
+    status1 = 'true'
+    
 }
 function gotResults(error,results){
     if(error){
